@@ -9,6 +9,9 @@ set number
 
 " Basic syntax highlighting
 syntax on
+syntax enable
+set background=dark
+colorscheme solarized
 
 " Show cursor position
 set ruler
@@ -26,7 +29,24 @@ set history=500
 set wildmenu
 
 " Highlight search terms
-set hls
+set hlsearch
+
+" Highlight search terms while typing
+set incsearch
+
+" Ignore case when searching
+set ignorecase
+set smartcase
 
 " When press Z+Enter leave 5 above cursor
 set scrolloff=5
+
+" Backup edited files
+" set backup
+
+" Wrap words on long line
+" set linebreak
+
+" Auto-indent
+set autoindent
+set smartindent
