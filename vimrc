@@ -1,8 +1,9 @@
 " Indenting
-" set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent
+set smartindent
 
 " Line numbering
 set number
@@ -47,6 +48,7 @@ set scrolloff=5
 " Wrap words on long line
 " set linebreak
 
-" Auto-indent
-set autoindent
-set smartindent
+" Quick-save hit \w
+map <leader>w :w!<CR>
+
+
