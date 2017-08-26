@@ -51,4 +51,5 @@ set scrolloff=5
 " Quick-save hit \w
 map <leader>w :w!<CR>
 
-
+" Font
+set gfn=Menlo:h14
