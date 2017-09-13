@@ -5,6 +5,15 @@ set expandtab
 set autoindent
 set smartindent
 
+" netrw setup
+let g:netrw_liststyle = 3 "tree view
+let g:netrw_banner = 0 "remove banner
+let g:netrw_winsize = 25 "netrw width 25% of screen size
+let g:netrw_browse_split = 4
+
+" Backspace in insert mode
+set backspace=indent,eol,start
+
 " Line numbering
 set number
 
@@ -53,3 +62,11 @@ map <leader>w :w!<CR>
 
 " Font
 set gfn=Menlo:h14
+
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'fatih/vim-go'
+
+" Initialize plugin system
+call plug#end()
